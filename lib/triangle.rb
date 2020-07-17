@@ -10,7 +10,7 @@ class Triangle
   class TriangleError < StandardError
   
    def kind
-    if(side_one * length_two * side_three) == 0 || (length_one + length_two) <= length_three || (length_two + length_three) <= length_one || (length_three + length_one) <= length_two
+    if(side_one * length_two * side_three) == 0 || (side_one + side_two) <= length_three || (length_two + length_three) <= length_one || (length_three + side_one) <= side_two
       begin
         raise TriangleError
         puts error.message
