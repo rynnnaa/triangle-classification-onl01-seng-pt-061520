@@ -7,9 +7,11 @@ class Triangle
     @side_three = side_three
   end
   
-  def Triangle
+  def kind
     if side_one == side_two && side_three
-      return "equilateral"
+      :equilateral
+    else
+      :scalene
     end
 
   end
