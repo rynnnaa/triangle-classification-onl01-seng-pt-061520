@@ -12,7 +12,7 @@ class Triangle
       begin
         raise TriangleError
         puts error.message
-        end
+      end
         
         elsif side_one == side_two && side_two == side_three
       :equilateral
