@@ -13,8 +13,8 @@ class Triangle
         raise TriangleError
         puts error.message
         end
-  
-  elsif side_one == side_two && side_two == side_three
+        
+        elsif side_one == side_two && side_two == side_three
       :equilateral
       elsif side_one == side_two || side_two == side_three || side_three == side_two && side_one == side_three
       :isosceles
