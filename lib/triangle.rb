@@ -9,20 +9,21 @@ class Triangle
   
   class TriangleError < StandardError
   
-  def kind
-    if(side_one * side_two * side_three) == 0 || (side_one = side_two) <= side_three
+   def kind
+    if(side_one * length_two * side_three) == 0 || (length_one + length_two) <= length_three || (length_two + length_three) <= length_one || (length_three + length_one) <= length_two
       begin
         raise TriangleError
         puts error.message
-        end
-        
-        elsif side_one == side_two && side_two == side_three
+      end
+   
+    elsif length_one == length_two && length_two == length_three
       :equilateral
-      elsif side_one == side_two || side_two == side_three || side_three == side_two && side_one == side_three
+    elsif side_one == side_two || side_one == side_three || side_two == side_three
       :isosceles
     else
       :scalene
     end
+  end
 
   end
 end
