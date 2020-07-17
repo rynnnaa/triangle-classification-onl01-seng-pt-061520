@@ -10,10 +10,9 @@ class Triangle
   def kind
     if(side_one * side_two * side_three) == 0 || (side_one = side_two) <= side_three
       begin
-      raise TriangleError
-      puts error.message
-      
-    end
+        raise TriangleError
+        puts error.message
+        end
   
   elsif side_one == side_two && side_two == side_three
       :equilateral
