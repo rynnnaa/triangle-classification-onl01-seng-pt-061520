@@ -8,8 +8,8 @@ class Triangle
   end
   
   class TriangleError < StandardError
-  
-   def kind
+    
+  def kind
     if(side_one * length_two * side_three) == 0 || (side_one + side_two) <= side_three || (side_two + side_three) <= side_one || (side_three + side_one) <= side_two
       begin
         raise TriangleError
