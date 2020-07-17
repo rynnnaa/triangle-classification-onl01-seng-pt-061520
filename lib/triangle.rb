@@ -7,6 +7,8 @@ class Triangle
     @side_three = side_three
   end
   
+  class TriangleError < StandardError
+  
   def kind
     if(side_one * side_two * side_three) == 0 || (side_one = side_two) <= side_three
       begin
